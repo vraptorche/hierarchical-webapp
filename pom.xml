@@ -16,9 +16,9 @@
     <groupId>co.jware.webapp</groupId>
     <artifactId>hierarchical-webapp</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>demo</name>
+    <name>hierarchical-webapp</name>
     <packaging>pom</packaging>
-    <description>Demo project for Spring Boot</description>
+    <description>Hierarchical project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>

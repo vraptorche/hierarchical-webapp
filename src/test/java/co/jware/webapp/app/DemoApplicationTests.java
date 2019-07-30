@@ -1,4 +1,4 @@
-package co.jware.webapp.demo;
+package co.jware.webapp.app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
