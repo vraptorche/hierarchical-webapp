@@ -12,9 +12,11 @@ public class CoreConfigTest {
 
     @Test
     public void context() {
-        contextRunner.run(ctx -> {
-            String[] names = ctx.getBeanDefinitionNames();
-            assertThat(names).isNotEmpty();
-        });
+        contextRunner.withPropertyValues("spring.profiles.active=local")
+                .run(ctx -> {
+                    String foo = ctx.getEnvironment().getProperty("foo");
+
+                    assertThat(foo).isEqualTo("bar");
+                });
     }
 }
